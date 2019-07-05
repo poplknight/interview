@@ -11,7 +11,7 @@ type randName struct {
 	mu sync.Mutex
 }
 
-var rn *randName = &randName{0,4,sync.Mutex{}}
+var rn *randName = &randName{0,21,sync.Mutex{}}
 
 func GetRandName(n int) string {
 	var i uint64
